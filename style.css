@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #232c52;
+    scrollbar-width: none;
+}
+
+#page {
+    min-height: 100vh;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#navbar {
+    height: 9.5vh;
+    width: 100%;
+    border-radius: 30px;
+    background: #232c52;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0px;
+    transition: 2s;
+    border: 2px solid #4E71FF;
+}
+
+#navbar button {
+    background: none;
+    border: none;
+}
+
+#navbar button a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar button :hover {
+    background: #4a62c2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+#div1 {
+    height: 95vh;
+    max-width: 100%;
+    background-color: #232c52;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 15vh;
+}
+
+#div1 #text {
+    height: fit-content;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-align: left;
+    padding-bottom: 150px;
+}
+
+#div1 #img img {
+    height: 100%;
+    width: 550px;
+    transform: scaleX(-1);
+    opacity: 0.2;
+    margin-right: -100px;
+}
+
+[type="button"] {
+    font-size: 13px;
+    background-color: #4E71FF;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+
+[type="button"]:hover {
+    scale: 1.05;
+    font-weight: bold;
+}
+
+#div1 #ul:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#div2 {
+    background-color: #4E71FF;
+    height: 30px;
+    max-width: 100%;
+    color: white;
+    font-size: x-large;
+    position: sticky;
+    top: 10vh;
+}
+
+marquee pre {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+
+button {
+    cursor: pointer;
+}
+
+#div3 {
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(225, 221, 221);
+    display: flex;
+    gap: 250px;
+    position: sticky;
+    top: 10vh;
+}
+
+#div3 #img {
+    padding-left: 150px;
+    display: grid;
+    grid-template-columns: 80% 100%;
+    grid-template-rows: 30% 25%;
+    gap: 10px;
+    align-content: center;
+}
+
+#div3 #img div img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover */
+}
+
+
+#div3 #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-right: 200px;
+}
+
+span {
+    color: #4E71FF;
+    font-weight: 500;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#div4 {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: rgb(225, 221, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 10vh;
+}
+
+#div4 #text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 30vh;
+    /* gap: 100px; */
+}
+
+#div4 #text div button:hover {
+    transform: scale(1.1);
+}
+
+
+#div4 #explore {
+    height: 50vh;
+    display: flex;
+    gap: 30px;
+    padding-inline: 20px;
+}
+
+
+.explore {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s;
+    height: fit-content;
+}
+
+.explore .img {
+    background-color: #4E71FF;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+}
+
+.explore:hover {
+    box-shadow: 0px 3px 0px #4E71FF;
+    transform: translatey(-20px);
+}
+
+.learn {
+    font-size: smaller;
+}
+
+.learn:hover {
+    color: #4E71FF;
+}
+
+
+#div5 {
+    height: 90vh;
+    max-width: 100%;
+    background-color: rgb(225, 221, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 10vh;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #4E71FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 400%;
+    color: white;
+    transition: 0.2s;
+}
+
+.circle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px gray;
+}
+
+.numCircle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #4a568d;
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+}
+
+.line {
+    width: 100px;
+    height: 0.01px;
+    border: solid 1px gray;
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+.workProcess {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+}
